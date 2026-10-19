@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f1efe7" />
+    <meta
+      name="description"
+      content="Casa Mare is a slow-living coastal hideaway in Comporta, Portugal. Come for the salt air; stay for a while."
+    />
+    <title>Casa Mare — Somewhere to slow down</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Casa Mare home">
+        <span class="wordmark-mark" aria-hidden="true">cm</span>
+        <span>casa mare</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#the-house">The house</a>
+        <a href="#slow-days">Slow days</a>
+        <a class="nav-cta" href="#booking">Find your dates <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2400&q=90"
+          alt="Sunlit white villa opening onto a quiet swimming pool"
+          fetchpriority="high"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> Comporta, Portugal · 38°22' N</p>
+          <h1 id="hero-title">Somewhere<br />to <em>slow down.</em></h1>
+          <p class="hero-copy">A little house between the rice fields and the sea. Come for the salt air; stay for a while.</p>
+          <a class="text-link hero-link" href="#the-house">Step inside <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="hero-caption" aria-label="A place made for the in-between moments">
+          <span class="caption-rule"></span>
+          <span>35 minutes from the everyday</span>
+        </div>
+
+        <div class="hero-index" aria-hidden="true">01 <span>/</span> 03</div>
+      </section>
+
+      <section class="booking-section" id="booking" aria-label="Plan your stay">
+        <div class="booking-intro">
+          <span class="booking-spark" aria-hidden="true">✳</span>
+          <div>
+            <p class="booking-kicker">Your own little corner</p>
+            <p class="booking-title">The good kind of getaway.</p>
+          </div>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <label class="booking-field">
+            <span>Arrive</span>
+            <input id="arrival" name="arrival" type="date" required />
+          </label>
+          <label class="booking-field">
+            <span>Leave</span>
+            <input id="departure" name="departure" type="date" required />
+          </label>
+          <label class="booking-field guests-field">
+            <span>People</span>
+            <select id="guests" name="guests" aria-label="Number of guests">
+              <option value="2">2 guests</option>
+              <option value="1">1 guest</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </label>
+          <button class="booking-submit" type="submit">Check your dates <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="booking-status" id="booking-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="intro section-pad" id="the-house">
+        <div class="intro-label">
+          <span class="section-number">01</span>
+          <span class="eyebrow">A house with room to breathe</span>
+        </div>
+        <div class="intro-body">
+          <h2>Less itinerary.<br /><em>More looking up.</em></h2>
+          <div class="intro-copy">
+            <p>Out here, the days have their own rhythm. Long breakfasts turn into long swims. The afternoon light does its thing. Dinner can wait until the stars come out.</p>
+            <a class="text-link dark-link" href="#slow-days">Get to know the place <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="house section-pad" aria-label="Inside Casa Mare">
+        <div class="house-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85"
+            alt="Quiet, light-filled living room with natural textures"
+            loading="lazy"
+          />
+          <span class="image-note">A softer sort of morning</span>
+        </div>
+        <div class="house-details">
+          <p class="eyebrow"><span class="eyebrow-dot dark-dot"></span> Made for staying in</p>
+          <h2>Room for all<br />the <em>little things.</em></h2>
+          <p class="house-copy">Bare feet on cool stone. A book you actually finish. Your favourite people around one very long table.</p>
+          <dl class="house-facts">
+            <div><dt>01 / 06</dt><dd>Thoughtful bedrooms</dd></div>
+            <div><dt>02</dt><dd>A pool that goes nowhere</dd></div>
+            <div><dt>03</dt><dd>Nothing on the schedule</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="slow-days" id="slow-days">
+        <div class="slow-photo">
+          <img
+            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85"
+            alt="Small waves rolling onto a calm Atlantic beach"
+            loading="lazy"
+          />
+          <span class="slow-photo-label">The Atlantic, just down the road</span>
+        </div>
+        <div class="slow-copy">
+          <span class="section-number">02 <span>/ THE NEIGHBOURHOOD</span></span>
+          <h2>Take the long way<br />to <em>nowhere.</em></h2>
+          <p>Follow the sandy track through the pines. Let the wind pick the beach. Find a table for lunch and don't ask what time it is.</p>
+          <a class="text-link light-link" href="#booking">Make a little time <span aria-hidden="true">↗</span></a>
+          <span class="slow-sun" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="closing section-pad">
+        <p class="eyebrow">When you're ready</p>
+        <h2>We'll leave<br /><em>the light on.</em></h2>
+        <a class="closing-cta" href="#booking">Find your dates <span aria-hidden="true">↗</span></a>
+        <span class="closing-note">Comporta, Alentejo · Portugal</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#home"><span class="wordmark-mark" aria-hidden="true">cm</span><span>casa mare</span></a>
+      <span class="footer-note">Made slowly, by the sea.</span>
+      <a class="footer-top" href="#home">Back to top ↑</a>
+      <span class="copyright">© Casa Mare 2026</span>
+    </footer>
+  </body>
+</html>
